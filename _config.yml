@@ -21,7 +21,7 @@ timezone: Asia/Kolkata
 
 title: Alok Ranjan                          # the main title
 
-tagline: LAMMPS lammps tutorial   # it will display as the sub-title
+tagline: M.Tech Project IIT Kharagpur   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
   Simplest guide to molecular dynamics simulations using LAMMPS.
