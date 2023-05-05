@@ -29,11 +29,14 @@ Chemical Engineering Department [Aug 2022-Feb 2023]
 
 **Title:**  Investigation ofthe reasons behind the stability of small-atom Pd clusters in water using MDsimulations.
 
-M.TECH Term Project (RX60012) |Professor Saamdu Chetri|Rekhi Centre of Excellence for the SoH [Oct 2021-Dec 2021]
+M.TECH Term Project (RX60012)|
+Professor Saamdu Chetri|
+Rekhi Centre of Excellence for the SoH [Oct 2021-Dec 2021]
 
 **Title:** Evaluation and developmentof relationship between types of Psychological well-being across age in India
 
-B.TECH Project | Senior Scientist Indrajit Kumar Ghosh CSIR-Indian Institute of Petroleum, Dehradun [Jan 2019-June 2019]
+B.TECH Project| 
+Senior Scientist Indrajit Kumar Ghosh CSIR-Indian Institute of Petroleum, Dehradun [Jan 2019-June 2019]
 
 **Title:**  Synthesis, screening of catalyst, and process optimization for the direct synthesis of styrene from Kerosene
 
