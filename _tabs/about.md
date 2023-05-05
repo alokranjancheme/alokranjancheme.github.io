@@ -51,17 +51,17 @@ Instrument Exposure: GC| XRD | TPD |
 ```
 POSITIONS OF RESPONSIBILITY
 ```
-- Departmental Teaching Assistanceship| 
-- Biochemical Engineering (CH40001)|
-- Prof. Parag Arvind Despandey [Aug 2022-Present]
+Departmental Teaching Assistanceship| 
+Biochemical Engineering (CH40001)|
+Prof. Parag Arvind Despandey [Aug 2022-Present]
 
-- Departmental Teaching Assistanceship| 
-- Advance Thermodynamics| 
-- Prof. Parag Arvind Despandey [Aug 2022-Present]
+Departmental Teaching Assistanceship| 
+Advance Thermodynamics| 
+Prof. Parag Arvind Despandey [Aug 2022-Present]
 
-- Member Public Relation Committee| 
-- 3rd National Symposium on SEFCO-2019|
-- CSIR-IIP Dehradun [May 10 - May 11 2019]
+Member Public Relation Committee| 
+3rd National Symposium on SEFCO-2019|
+CSIR-IIP Dehradun [May 10 - May 11 2019]
 
 ```
 CERTIFICATIONS
