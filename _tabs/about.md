@@ -4,9 +4,9 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-# ALOK RANJAN | 
+# ALOK RANJAN
 
-# CHEMICAL ENGINEERING
+## CHEMICAL ENGINEERING
 
 ## EDUCATION
 
