@@ -8,7 +8,7 @@ To fully use all the features of **Chirpy**, you need to copy the other critical
 
 ```shell
 .
-├── _config.yml
+├── _config.yml     bundle exec jekyll serve
 ├── _plugins
 ├── _tabs
 └── index.html
@@ -32,6 +32,7 @@ $ bundle
 
 ## Usage
 
+bundle exec jekyll serve
 Please see the [theme's docs](https://github.com/cotes2020/jekyll-theme-chirpy#documentation).
 
 ## License

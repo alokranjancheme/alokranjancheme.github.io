@@ -55,7 +55,7 @@ google_site_verification:               # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id:                 # fill in your Google Analytics ID
+  id: G-VJ63NQ07VJ                 # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
     proxy_endpoint:   # fill in the Google Analytics superProxy endpoint of Google App Engine
@@ -82,13 +82,13 @@ theme_mode:   # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://media.licdn.com/dms/image/D4D03AQEfu2MYKmljUA/profile-displayphoto-shrink_200_200/0/1688839538841?e=1694649600&v=beta&t=Kbk9kKyP4a1IIYU04s7RizQZgG4Fw_2eMV43nIPcRs0
+avatar: https://avatars.githubusercontent.com/u/125783050?v=4
 
 # boolean type, the global switch for ToC in posts.
 toc: true
 
 comments:
-  active:       # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
+  active:      # The global switch for posts comments, e.g., 'disqus'.  Keep it empty means disable
   # The active options are as follows:
   disqus:
     shortname:    # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
