@@ -12,7 +12,7 @@ order: 4
 
 Year Degree/Exam Institute CGPA/Marks
 
-* 2023 M.TECH IIT Kharagpur 8.99 / 10
+* 2023 M.TECH IIT Kharagpur 9.3 / 10
 
 * 2019 B.TECH UICT Jalgaon Maharashtra 7.79 / 10
 
