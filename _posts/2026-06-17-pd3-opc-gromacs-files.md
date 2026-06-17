@@ -1,6 +1,6 @@
 ---
 title: "Simulation Pd₃ in OPC Water"
-date: 2026-06-17 00:00:00 +0530
+date: 2026-06-17
 categories: [Molecular Dynamics, Force Field]
 tags: [lammps, fftool, palladium, md-simulation, force-field, packmol]
 math: true
