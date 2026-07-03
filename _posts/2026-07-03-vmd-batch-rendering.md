@@ -61,6 +61,8 @@ in the paper.
 The complete script. Source it from the Tk Console or pass the system name
 via `-args` for unattended batch use:
 
+{% raw %}
+
 ```tcl
 # capture_frames.tcl
 # ------------------
@@ -214,6 +216,8 @@ puts "Done: $out_dir"
 if {$argc >= 1} { quit }
 ```
 
+{% endraw %}
+
 ---
 
 ## 3. Batch Processing All Systems
@@ -318,6 +322,8 @@ The most reliable workflow for getting the canonical view:
 
 The `set viewpoints` entry looks like:
 
+{% raw %}
+
 ```tcl
 set viewpoints([molinfo top]) {
     {{1 0 0 -30.005} {0 1 0 -30.0} {0 0 1 -30.0} {0 0 0 1}}    ;# center
@@ -327,6 +333,8 @@ set viewpoints([molinfo top]) {
     {{1 0 0 0} {0 1 0 0} {0 0 1 0} {0 0 0 1}}                   ;# global
 }
 ```
+
+{% endraw %}
 
 ---
 
