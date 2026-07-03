@@ -1,7 +1,7 @@
 ---
 author:
 title: Accessing HPC
-categories: [softwere,guidlines]
+categories: [software,guidelines]
 tags: [tutorials]
 ---
 # Using Supercomputer 

@@ -1,6 +1,6 @@
 ---
 title: "GROMACS Equilibration and Production Protocol for Solvated Nanoclusters"
-date: 2025-01-04 00:00:00 +0530
+date: 2026-06-18 00:00:00 +0530
 categories: [Computational Chemistry, Molecular Dynamics]
 tags: [gromacs, molecular-dynamics, equilibration, production, npt, nvt, energy-minimisation, hpc, param-shakti, slurm]
 math: true

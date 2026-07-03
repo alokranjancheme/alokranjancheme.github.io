@@ -2,7 +2,7 @@
 layout: post
 title: "Setting Up Pd Nanocluster MD Simulations: What Actually Worked"
 date: 2026-06-20
-categories: computational-chemistry molecular-dynamics
+categories: [computational-chemistry, molecular-dynamics]
 tags: [gromacs, palladium, opc-water, nmp, lincs, cuda, vmd]
 ---
 
