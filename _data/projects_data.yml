@@ -1,0 +1,518 @@
+projects:
+  # ════════════════════════════════════════════════════════════════════
+  # MOLECULAR ENGINEERING PROJECTS
+  # ════════════════════════════════════════════════════════════════════
+
+  - id: "cluster-aggregation-analysis"
+    order: 1
+    theme: "molecular_engineering"
+    title: "Cluster-Size Distribution Analysis for Metal Nanoclusters"
+    subtitle: "Tracking aggregation dynamics using graph theory and MDAnalysis"
+    date: "2026-06-03"
+    
+    problem: >-
+      How do dispersed metal nanoclusters evolve and aggregate over long MD 
+      trajectories? Measuring cluster-size distributions requires identifying 
+      connected metal atoms and tracking them frame-by-frame.
+    
+    approach: >-
+      Developed a complete Python pipeline using MDAnalysis and scipy.sparse to 
+      compute distance matrices, identify connected components, and generate 
+      temporal evolution plots of cluster sizes.
+    
+    methods:
+      - Graph connectivity analysis
+      - Distance matrix computation
+      - Connected components algorithm (scipy.sparse.csgraph)
+      - Temporal histogram generation
+    
+    results: >-
+      Successfully analyzed 90 independent 100 ns MD trajectories of Pd₅₅ clusters 
+      in five different solvent environments. Generated publication-quality plots 
+      showing aggregation pathways and timescales.
+    
+    tools:
+      - Python
+      - MDAnalysis
+      - SciPy
+      - Pandas
+      - Matplotlib
+    
+    skills:
+      - Trajectory Analysis
+      - Graph Algorithms
+      - Data Science
+      - Scientific Computing
+    
+    impact: >-
+      Results used for Journal of Chemical Physics manuscript. Provides quantitative 
+      metrics for comparing cluster stability across different chemical environments.
+    
+    links:
+      blog: "/posts/2026-07-03-cluster-size-distribution-mdanalysis/"
+    
+    featured: true
+
+  - id: "palladium-force-field"
+    order: 2
+    theme: "molecular_engineering"
+    title: "Force Field Development for Small Palladium Clusters"
+    subtitle: "Parameterization and validation of Pd₃, Pd₄, Pd₅ force fields"
+    date: "2023-2024"
+    
+    problem: >-
+      Existing force fields for small metal clusters are limited. Need accurate 
+      parameters for palladium clusters in aqueous environments to enable 
+      long-timescale simulations.
+    
+    approach: >-
+      Developed custom force field parameters by benchmarking against quantum 
+      chemical calculations. Validated against molecular dynamics trajectories 
+      and experimental properties.
+    
+    methods:
+      - QM calculations for reference data
+      - LAMMPS force field parameterization
+      - MD validation simulations
+      - Property comparison (binding energies, solvation)
+    
+    results: >-
+      Generated validated force fields for Pd₃, Pd₄, and Pd₅ clusters. FF files 
+      available in repository. Good agreement with QM results and literature values.
+    
+    tools:
+      - LAMMPS
+      - Quantum Chemistry Software
+      - Python
+      - GROMACS (for comparison)
+    
+    skills:
+      - Force Field Development
+      - Molecular Dynamics
+      - Quantum Chemistry
+      - Scientific Computing
+    
+    impact: >-
+      These force fields enable study of larger palladium clusters and 
+      provide foundation for reactive MD simulations.
+    
+    featured: true
+
+  - id: "md-solvation-effects"
+    order: 3
+    theme: "molecular_engineering"
+    title: "Solvation Effects on Pd Cluster Stability"
+    subtitle: "Water, organic solvents, and mixed aqueous systems"
+    date: "2024-2026"
+    
+    problem: >-
+      Why are small Pd clusters stable in water but less stable in organic solvents? 
+      Understanding solvation effects is critical for cluster chemistry.
+    
+    approach: >-
+      Ran 90+ MD simulations (100 ns each) of Pd clusters in 5 different solvent 
+      environments. Analyzed solvation shell structure, coordination numbers, and 
+      aggregation propensity.
+    
+    methods:
+      - MD Simulation (GROMACS, LAMMPS)
+      - Radial distribution functions
+      - Coordination number analysis
+      - Hydrogen bonding analysis
+      - Aggregation pathway tracking
+    
+    results: >-
+      Discovered that water's hydrogen bonding network stabilizes metal clusters 
+      through shell effects. Organic solvents show different coordination patterns.
+    
+    tools:
+      - GROMACS
+      - LAMMPS
+      - MDAnalysis
+      - Python
+    
+    skills:
+      - Molecular Dynamics
+      - Trajectory Analysis
+      - Statistical Mechanics
+      - Scientific Computing
+    
+    impact: >-
+      Major finding for understanding cluster chemistry. Impacts rational design 
+      of solvents for nanomaterial synthesis and catalysis.
+    
+    featured: true
+
+  - id: "gromacs-setup-pipeline"
+    order: 4
+    theme: "molecular_engineering"
+    title: "GROMACS Equilibration & Production Pipeline"
+    subtitle: "Automated workflow for MD simulations from build to production"
+    date: "2026-04-2026-06"
+    
+    problem: >-
+      Manual GROMACS setup for multiple systems is error-prone and time-consuming. 
+      Need a standardized, reproducible workflow.
+    
+    approach: >-
+      Created bash/Python scripts to automate: system building, energy minimization, 
+      NVT equilibration, NPT equilibration, production runs with restart capabilities.
+    
+    methods:
+      - System parameterization (GROMACS)
+      - EM algorithm (steepest descent, conjugate gradient)
+      - NVT/NPT equilibration (Berendsen, Nosé-Hoover)
+      - Production runs with trajectory analysis
+    
+    results: >-
+      Complete pipeline from PDB → production trajectory. Applied to 90+ simulations. 
+      Reduces setup time by 70% and ensures reproducibility.
+    
+    tools:
+      - GROMACS
+      - Bash
+      - Python
+      - HPC Job Schedulers (SLURM)
+    
+    skills:
+      - Molecular Dynamics
+      - Workflow Automation
+      - HPC
+      - Scientific Software
+    
+    impact: >-
+      Enables rapid prototyping of new systems. Facilitates teaching and collaboration.
+    
+    links:
+      blog: "/posts/2026-06-17-gromacs-equilibration-production/"
+
+  - id: "water-topology"
+    order: 5
+    theme: "molecular_engineering"
+    title: "Custom Water Topology for GROMACS Simulations"
+    subtitle: "OPC, SPC, TIP3P water model parameterization"
+    date: "2026-05-2026-06"
+    
+    problem: >-
+      Different water models have different topologies. Need consistent, 
+      validated water parameters for solvation studies.
+    
+    approach: >-
+      Developed and validated GROMACS topology files for multiple water models. 
+      Benchmarked against literature values and experimental properties.
+    
+    methods:
+      - Water model parameterization
+      - Topology file generation
+      - Property validation (density, heat of vaporization)
+      - Equilibration and production runs
+    
+    results: >-
+      Validated GROMACS topology files for OPC, SPC, TIP3P. Used in all 90+ 
+      Pd cluster simulations.
+    
+    tools:
+      - GROMACS
+      - Python
+      - Topology development
+    
+    skills:
+      - Molecular Dynamics
+      - Force Field Development
+      - Scientific Computing
+    
+    impact: >-
+      Ensures accuracy of solvation environment in all simulations.
+    
+    links:
+      blog: "/posts/2026-07-03-opc-water-gromacs-topology/"
+
+  # ════════════════════════════════════════════════════════════════════
+  # SUSTAINABLE PROCESS ENGINEERING PROJECTS
+  # ════════════════════════════════════════════════════════════════════
+
+  - id: "hydrogen-pilot-plant"
+    order: 1
+    theme: "sustainability"
+    title: "Green Hydrogen Production: Pilot Plant Process Engineering"
+    subtitle: "Process modeling and optimization for ONGC hydrogen facility"
+    date: "2024-2026"
+    
+    problem: >-
+      Design and optimize hydrogen production processes for industrial scale. 
+      Focus on efficiency, sustainability, and scalability.
+    
+    approach: >-
+      Developed process models using computational thermodynamics, conducted 
+      energy balances, optimized operating parameters for maximum efficiency.
+    
+    methods:
+      - Process simulation (Aspen Plus)
+      - Thermodynamic modeling
+      - Energy balance calculations
+      - Parameter optimization
+    
+    results: >-
+      Improved process efficiency and provided recommendations for facility 
+      operation. Industrial-scale impact. [Details maintained in confidence]
+    
+    tools:
+      - Aspen Plus
+      - COMSOL Multiphysics
+      - Python
+      - Engineering design tools
+    
+    skills:
+      - Process Engineering
+      - Thermodynamics
+      - Process Optimization
+      - Industrial Applications
+    
+    impact: >-
+      Direct industrial application. Improved efficiency of green hydrogen 
+      production. Shaped my long-term research vision.
+    
+    featured: true
+    confidential: true
+
+  - id: "hydrogen-simulation"
+    order: 2
+    theme: "sustainability"
+    title: "Computational Modeling of H₂ Production Processes"
+    subtitle: "Reactor design and optimization"
+    date: "2025-2026"
+    
+    problem: >-
+      How to design and optimize hydrogen production reactors? What are the 
+      key bottlenecks?
+    
+    approach: >-
+      Modeled hydrogen production using reaction engineering principles. 
+      Integrated thermodynamics with kinetics. Optimized reactor design.
+    
+    methods:
+      - Reaction kinetics
+      - Mass and heat transfer
+      - Reactor design equations
+      - Parameter sensitivity analysis
+    
+    results: >-
+      Identified key optimization parameters. Provided design recommendations.
+    
+    tools:
+      - Python
+      - COMSOL Multiphysics
+      - Computational modeling
+    
+    skills:
+      - Reaction Engineering
+      - Process Design
+      - Scientific Computing
+
+  # ════════════════════════════════════════════════════════════════════
+  # SCIENTIFIC AI & DATA SCIENCE PROJECTS
+  # ════════════════════════════════════════════════════════════════════
+
+  - id: "ml-molecular-properties"
+    order: 1
+    theme: "scientific_ai"
+    title: "Machine Learning for Molecular Property Prediction"
+    subtitle: "Deep learning models for predicting cluster properties from MD"
+    date: "2024-2026"
+    
+    problem: >-
+      Can machine learning predict molecular properties (binding energy, geometry, 
+      reactivity) from MD data? Can this accelerate discovery?
+    
+    approach: >-
+      Trained neural networks on MD trajectories to predict molecular properties. 
+      Tested various architectures (CNN, RNN, Graph Neural Networks).
+    
+    methods:
+      - Data preprocessing from MD trajectories
+      - Feature engineering (structural descriptors)
+      - Deep learning architectures
+      - Model validation and uncertainty quantification
+    
+    results: >-
+      Achieved good prediction accuracy. Models can infer properties faster 
+      than full MD simulations.
+    
+    tools:
+      - TensorFlow
+      - Keras
+      - PyTorch
+      - Scikit-learn
+      - Python
+    
+    skills:
+      - Machine Learning
+      - Deep Learning
+      - Data Science
+      - Molecular Descriptors
+    
+    impact: >-
+      Enables rapid property screening and accelerated discovery workflows.
+
+  - id: "aganitha-ml-chemistry"
+    order: 2
+    theme: "scientific_ai"
+    title: "AI Applications in Computational Chemistry"
+    subtitle: "Machine learning pipeline development at Aganitha AI"
+    date: "2023-2024"
+    
+    problem: >-
+      How to systematically apply machine learning to chemistry problems?
+    
+    approach: >-
+      Developed ML pipelines for molecular property prediction, chemical reaction 
+      outcome prediction, and automated data analysis.
+    
+    methods:
+      - Data pipeline development
+      - Feature engineering for chemistry
+      - Model training and validation
+      - Automation and deployment
+    
+    results: >-
+      Built production ML systems. Automated complex data workflows.
+    
+    tools:
+      - TensorFlow
+      - Scikit-learn
+      - Python
+      - Data engineering tools
+    
+    skills:
+      - ML Engineering
+      - Data Science
+      - Scientific Automation
+      - Software Development
+
+  # ════════════════════════════════════════════════════════════════════
+  # SCIENTIFIC COMPUTING PROJECTS
+  # ════════════════════════════════════════════════════════════════════
+
+  - id: "hpc-benchmarking"
+    order: 1
+    theme: "computing"
+    title: "HPC Benchmarking & GPU Acceleration"
+    subtitle: "Performance optimization for MD simulations"
+    date: "2025-2026"
+    
+    problem: >-
+      How to maximize simulation speed on HPC clusters? What's the best GPU/CPU 
+      configuration?
+    
+    approach: >-
+      Developed benchmark suite. Tested GROMACS and LAMMPS on multiple GPUs 
+      and CPU configurations. Profiled code performance.
+    
+    methods:
+      - Benchmark development
+      - Performance profiling
+      - GPU acceleration tuning
+      - Batch job optimization
+    
+    results: >-
+      2-5x speedup with GPU acceleration. Established best practices for 
+      efficient simulations.
+    
+    tools:
+      - GROMACS
+      - LAMMPS
+      - CUDA
+      - Linux
+      - HPC Job Schedulers
+    
+    skills:
+      - HPC
+      - Performance Optimization
+      - GPU Computing
+      - Scientific Computing
+    
+    impact: >-
+      Enables 90+ simulations to run in reasonable timescale.
+    
+    links:
+      blog: "/posts/2026-07-03-gromacs-gpu-fedora-setup/"
+
+  - id: "python-scientific-computing"
+    order: 2
+    theme: "computing"
+    title: "Python Scientific Computing Framework"
+    subtitle: "Reproducible, modular scientific code"
+    date: "2024-2026"
+    
+    problem: >-
+      How to write clean, reproducible scientific code? How to enable collaboration?
+    
+    approach: >-
+      Developed Python libraries for: trajectory analysis, data processing, 
+      visualization. Documented. Version controlled. Tested.
+    
+    methods:
+      - Software engineering best practices
+      - Documentation
+      - Unit testing
+      - Version control (Git/GitHub)
+    
+    results: >-
+      Reusable code library. Easy to extend. Enables others to reproduce work.
+    
+    tools:
+      - Python
+      - NumPy, Pandas, SciPy
+      - Matplotlib, Jupyter
+      - Git, GitHub
+      - pytest
+    
+    skills:
+      - Python Programming
+      - Software Engineering
+      - Scientific Computing
+      - Open Source Development
+    
+    impact: >-
+      Foundation for scalable, reproducible research. Publishable code.
+
+  - id: "linux-hpc-workflow"
+    order: 3
+    theme: "computing"
+    title: "Linux HPC Workflow Optimization"
+    subtitle: "Automated batch job management and data processing"
+    date: "2024-2026"
+    
+    problem: >-
+      Managing 90+ simulations manually is error-prone. How to automate 
+      job submission, monitoring, and data collection?
+    
+    approach: >-
+      Developed bash/Python scripts for: job submission, progress monitoring, 
+      automated result collection and organization.
+    
+    methods:
+      - Bash scripting
+      - Job scheduler interaction (SLURM, PBS)
+      - Process automation
+      - Data pipeline development
+    
+    results: >-
+      Fully automated workflow from launch to analysis. Processes 90+ results 
+      automatically.
+    
+    tools:
+      - Bash
+      - Python
+      - Linux
+      - SLURM/PBS
+      - rsync, parallel
+    
+    skills:
+      - Linux Administration
+      - Automation
+      - HPC Job Management
+      - Workflow Development
+    
+    impact: >-
+      Reduces manual work. Enables reproducibility. Scales easily.

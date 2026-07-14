@@ -1,0 +1,143 @@
+themes:
+  - id: molecular_engineering
+    order: 1
+    icon: "flask"
+    name: "Computational Molecular Engineering"
+    short_name: "Molecular Engineering"
+    description: >-
+      Molecular dynamics simulation, force field development, and understanding 
+      the behavior of nanoclusters and complex molecular systems through computational methods.
+    long_description: >-
+      My research focuses on using molecular dynamics simulations (GROMACS, LAMMPS) to understand 
+      how small metal clusters (palladium, platinum) behave in different chemical environments. 
+      I develop and validate force fields, analyze solvation effects, and track cluster aggregation 
+      dynamics. This work forms the foundation for rational catalyst design and nanomaterial engineering.
+    tools:
+      - GROMACS
+      - LAMMPS
+      - MDAnalysis
+      - VMD
+      - Python
+    skills:
+      - Molecular Dynamics
+      - Force Field Development
+      - Nanoclusters
+      - Solvation Thermodynamics
+      - Trajectory Analysis
+    keywords:
+      - MD Simulation
+      - Force Fields
+      - Nanoclusters
+      - Solvation
+      - GROMACS
+      - LAMMPS
+    future_direction: >-
+      Advanced sampling techniques (enhanced MD), reactive molecular dynamics for catalysis, 
+      machine learning-based force field development
+
+  - id: sustainability
+    order: 2
+    icon: "leaf"
+    name: "Sustainable Process Engineering"
+    short_name: "Sustainability"
+    description: >-
+      Green hydrogen production, biomass conversion, catalysis, and circular chemical manufacturing 
+      using process intensification and computational modeling.
+    long_description: >-
+      I am motivated by the challenge of developing sustainable chemical processes that address 
+      global energy and environmental needs. My industrial experience in hydrogen production at ONGC's 
+      pilot plant showed me that computational methods can dramatically accelerate the design of 
+      efficient, green chemical processes. My research interests include hydrogen technologies, 
+      biomass valorization, catalytic process design, and digital tools for process optimization.
+    tools:
+      - Aspen Plus
+      - COMSOL Multiphysics
+      - Python
+      - Process Simulation Software
+    skills:
+      - Process Modeling
+      - Thermodynamic Analysis
+      - Green Hydrogen
+      - Catalysis
+      - Process Intensification
+    keywords:
+      - Green Hydrogen
+      - Catalysis
+      - Biomass Conversion
+      - Process Intensification
+      - Sustainability
+    future_direction: >-
+      Integration of MD simulations with process models, development of sustainable catalysts, 
+      machine learning for process optimization
+
+  - id: scientific_ai
+    order: 3
+    icon: "brain"
+    name: "Scientific AI & Data Science"
+    short_name: "Scientific AI"
+    description: >-
+      Machine learning applications to chemistry, data-driven discovery, automated data analysis, 
+      and scientific computing for chemical engineering problems.
+    long_description: >-
+      Machine learning and AI are transforming chemical engineering by enabling faster discovery, 
+      automated data analysis, and predictive modeling. I apply these techniques to extract insights 
+      from molecular simulations, develop predictive models for molecular properties, and automate 
+      complex workflows. My goal is to make scientific computing more accessible and efficient.
+    tools:
+      - TensorFlow
+      - Scikit-learn
+      - Keras
+      - PyTorch
+      - Python
+      - Pandas
+    skills:
+      - Machine Learning
+      - Deep Learning
+      - Data Science
+      - Predictive Modeling
+      - Scientific Automation
+    keywords:
+      - Machine Learning
+      - Data Science
+      - AI for Chemistry
+      - Automation
+      - Predictive Models
+    future_direction: >-
+      ML for force field development, graph neural networks for molecular systems, 
+      automated experimental design, high-throughput screening
+
+  - id: computing
+    order: 4
+    icon: "server"
+    name: "Scientific Computing"
+    short_name: "Computing"
+    description: >-
+      High-performance computing, scientific software development, Python programming, Linux systems, 
+      and computational tools for research.
+    long_description: >-
+      High-performance computing is essential for simulating large molecular systems and processing 
+      massive datasets. I develop efficient scientific software in Python, optimize code for HPC systems, 
+      and work with Linux environments. I believe that good scientific computing practices—clean code, 
+      reproducibility, version control, documentation—are fundamental to quality research.
+    tools:
+      - Python
+      - Linux / Bash
+      - Git / GitHub
+      - HPC Systems (SLURM, PBS)
+      - Jupyter Notebooks
+      - Docker
+    skills:
+      - Python Programming
+      - Linux Administration
+      - HPC Job Scheduling
+      - Code Optimization
+      - Software Development
+    keywords:
+      - HPC
+      - Python
+      - Linux
+      - Scientific Software
+      - Reproducibility
+    future_direction: >-
+      GPU-accelerated computing, containerized research workflows, open-source scientific software, 
+      reproducible computational workflows

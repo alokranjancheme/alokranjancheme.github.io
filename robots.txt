@@ -1,0 +1,23 @@
+# Robots.txt for alokranjancheme.github.io
+# Google Search Engine Crawler
+
+User-agent: *
+Allow: /
+Allow: /posts/
+Allow: /research/
+Allow: /projects/
+Allow: /publications/
+Allow: /blog/
+Allow: /outreach/
+Allow: /cv/
+Allow: /contact/
+Allow: /assets/
+
+# Disallow crawling of internal pages that shouldn't be indexed
+Disallow: /search/
+
+# Sitemap
+Sitemap: https://alokranjancheme.github.io/sitemap.xml
+
+# Crawl-delay to prevent server overload
+Crawl-delay: 1

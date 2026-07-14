@@ -2,3 +2,276 @@
 layout: home
 # Index page
 ---
+
+<!-- HERO SECTION -->
+<div class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="hero-avatar">
+        <img src="{{ site.avatar }}" alt="Alok Ranjan" class="avatar-image">
+      </div>
+      
+      <div class="hero-text">
+        <h1 class="hero-title">Alok Ranjan</h1>
+        <h2 class="hero-subtitle">Computational Chemical Engineer</h2>
+        
+        <p class="hero-description">
+          I develop multiscale computational solutions for sustainable chemical processes through 
+          molecular simulation, reaction engineering, and machine learning.
+        </p>
+        
+        <div class="hero-cta-buttons">
+          <a href="{{ '/research' | relative_url }}" class="btn btn-primary">Research</a>
+          <a href="{{ '/publications' | relative_url }}" class="btn btn-secondary">Publications</a>
+          <a href="{{ '/cv' | relative_url }}" class="btn btn-secondary">CV</a>
+          <a href="{{ '/contact' | relative_url }}" class="btn btn-secondary">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- RESEARCH VISION SECTION -->
+<section class="research-vision-section">
+  <div class="section-container">
+    <h2 class="section-title">Research Mission</h2>
+    
+    <div class="vision-content">
+      <p>
+        I became a chemical engineer to solve real problems. Early in my career, I realized that 
+        chemistry happens at the molecular scale—understanding it requires computational methods 
+        and careful molecular-level thinking.
+      </p>
+      
+      <p>
+        My experience in hydrogen production at ONGC showed me that industrial processes can be 
+        dramatically improved through better molecular understanding and computational design. 
+        This motivated my focus on <strong>sustainable computational chemical engineering</strong>.
+      </p>
+      
+      <p>
+        Today, I pursue research at the intersection of molecular dynamics simulations, 
+        machine learning, and chemical engineering principles. I want to develop the next generation 
+        of computational tools for understanding and designing sustainable chemical processes.
+      </p>
+      
+      <p>
+        My long-term vision is to become a leader in computational chemical engineering, contributing 
+        both to fundamental science and to solving real-world sustainability challenges—particularly 
+        those relevant to developing countries like India.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- RESEARCH THEMES CARDS -->
+<section class="research-themes-section">
+  <div class="section-container">
+    <h2 class="section-title">Research Areas</h2>
+    
+    <div class="themes-grid">
+      {% for theme in site.data.research_themes.themes %}
+      <div class="theme-card" data-theme="{{ theme.id }}">
+        <div class="theme-icon">
+          <i class="fas fa-{{ theme.icon }}"></i>
+        </div>
+        
+        <h3 class="theme-name">{{ theme.name }}</h3>
+        
+        <p class="theme-description">{{ theme.short_name }}</p>
+        
+        <div class="theme-tools">
+          {% for tool in theme.tools limit:3 %}
+          <span class="tool-badge">{{ tool }}</span>
+          {% endfor %}
+        </div>
+        
+        <a href="{{ '/research' | relative_url }}#{{ theme.id }}" class="theme-link">
+          Learn More <i class="fas fa-arrow-right"></i>
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED PUBLICATIONS -->
+<section class="featured-publications-section">
+  <div class="section-container">
+    <h2 class="section-title">Featured Publications</h2>
+    
+    {% assign featured_pubs = site.data.publications.publications | where: "featured", true | sort: "order" %}
+    
+    {% if featured_pubs.size > 0 %}
+    <div class="publications-grid">
+      {% for pub in featured_pubs limit:2 %}
+      <div class="publication-card">
+        <div class="pub-meta">
+          <span class="pub-journal">{{ pub.journal }}</span>
+          <span class="pub-year">{{ pub.year }}</span>
+          <span class="pub-status">{{ pub.status }}</span>
+        </div>
+        
+        <h3 class="pub-title">{{ pub.title }}</h3>
+        
+        <p class="pub-authors">
+          {% for author in pub.authors %}
+            {% if forloop.last %}
+              <span>{{ author }}</span>
+            {% else %}
+              <span>{{ author }},</span>
+            {% endif %}
+          {% endfor %}
+        </p>
+        
+        <p class="pub-abstract">{{ pub.abstract | truncatewords: 50 }}</p>
+        
+        <div class="pub-links">
+          {% if pub.doi %}
+          <a href="https://doi.org/{{ pub.doi }}" class="pub-link" target="_blank">DOI</a>
+          {% endif %}
+          {% if pub.pdf %}
+          <a href="{{ pub.pdf }}" class="pub-link" target="_blank">PDF</a>
+          {% endif %}
+          {% if pub.preprint %}
+          <a href="{{ pub.preprint }}" class="pub-link" target="_blank">Preprint</a>
+          {% endif %}
+          <span class="pub-link pub-bibtex-toggle" onclick="toggleBibTeX(event)">BibTeX</span>
+        </div>
+        
+        <div class="pub-bibtex" style="display: none;">
+          <pre><code>{{ pub.bibtex }}</code></pre>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="section-link">
+      <a href="{{ '/publications' | relative_url }}">View All Publications →</a>
+    </div>
+    {% else %}
+    <div class="empty-state">
+      <p>Research manuscripts in preparation. Check back soon.</p>
+    </div>
+    {% endif %}
+  </div>
+</section>
+
+<!-- FEATURED PROJECTS -->
+<section class="featured-projects-section">
+  <div class="section-container">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    {% assign featured_projects = site.data.projects_data.projects | where: "featured", true | sort: "order" %}
+    
+    <div class="projects-grid">
+      {% for project in featured_projects limit:4 %}
+      <div class="project-card" data-theme="{{ project.theme }}">
+        <div class="project-theme-badge">
+          {% for theme in site.data.research_themes.themes %}
+            {% if theme.id == project.theme %}
+            {{ theme.short_name }}
+            {% endif %}
+          {% endfor %}
+        </div>
+        
+        <h3 class="project-title">{{ project.title }}</h3>
+        
+        <p class="project-description">{{ project.subtitle }}</p>
+        
+        <p class="project-problem">
+          <strong>Problem:</strong> {{ project.problem | truncatewords: 20 }}
+        </p>
+        
+        <div class="project-tools">
+          {% for tool in project.tools limit:3 %}
+          <span class="tool-badge">{{ tool }}</span>
+          {% endfor %}
+        </div>
+        
+        <a href="{{ '/projects' | relative_url }}#{{ project.id }}" class="project-link">
+          Details →
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="section-link">
+      <a href="{{ '/projects' | relative_url }}">View All Projects →</a>
+    </div>
+  </div>
+</section>
+
+<!-- CAREER TIMELINE -->
+<section class="timeline-section">
+  <div class="section-container">
+    <h2 class="section-title">Career Timeline</h2>
+    
+    <div class="timeline-container">
+      {% for event in site.data.timeline.events %}
+      <div class="timeline-item" data-year="{{ event.year }}" data-type="{{ event.type }}">
+        <div class="timeline-dot {% if event.highlight %}highlight{% endif %}"></div>
+        
+        <div class="timeline-content">
+          <div class="timeline-year">{{ event.year }}</div>
+          <h3 class="timeline-title">{{ event.title }}</h3>
+          <p class="timeline-institution">{{ event.institution }}{% if event.organization %} · {{ event.organization }}{% endif %}</p>
+          {% if event.score %}
+          <p class="timeline-score">{{ event.score }}</p>
+          {% endif %}
+          <p class="timeline-description">{{ event.description }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<!-- LATEST ARTICLES -->
+<section class="latest-articles-section">
+  <div class="section-container">
+    <h2 class="section-title">Latest Articles</h2>
+    
+    <div class="articles-list">
+      {% for post in site.posts limit:3 %}
+      <div class="article-item">
+        <div class="article-date">{{ post.date | date: "%Y-%m-%d" }}</div>
+        
+        <h3 class="article-title">
+          <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+        </h3>
+        
+        <p class="article-description">
+          {% if post.description %}
+            {{ post.description | truncatewords: 30 }}
+          {% else %}
+            {{ post.content | strip_html | truncatewords: 30 }}
+          {% endif %}
+        </p>
+        
+        <div class="article-categories">
+          {% for category in post.categories %}
+          <span class="category-badge">{{ category }}</span>
+          {% endfor %}
+        </div>
+        
+        <a href="{{ post.url | relative_url }}" class="article-link">Read →</a>
+      </div>
+      {% endfor %}
+    </div>
+    
+    <div class="section-link">
+      <a href="{{ '/blog' | relative_url }}">View All Articles →</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function toggleBibTeX(event) {
+  event.preventDefault();
+  const bibtexDiv = event.target.nextElementSibling;
+  if (bibtexDiv && bibtexDiv.classList.contains('pub-bibtex')) {
+    bibtexDiv.style.display = bibtexDiv.style.display === 'none' ? 'block' : 'none';
+  }
+}
+</script>

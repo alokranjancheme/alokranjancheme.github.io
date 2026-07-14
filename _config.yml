@@ -25,14 +25,26 @@ future: true
 
 title: Alok Ranjan                          # the main title
 
-tagline: Computational Chemistry & Molecular Dynamics   # it will display as the sub-title
+tagline: Computational Chemical Engineer | Sustainable Process Engineering   # it will display as the sub-title
 
 description: >-                        # used by seo meta and the atom feed
-  LAMMPS, lammps, LAMMPS Tutorial, Packmol, VMD
-  
+  Computational Chemical Engineer developing multiscale solutions for sustainable 
+  chemical processes. Research interests: molecular dynamics, reaction engineering, 
+  catalysis, hydrogen technologies, machine learning for chemistry, scientific computing.
+  Passionate about green hydrogen, biomass conversion, and computational tools for 
+  chemical engineering. PhD applicant for top European universities.
+
+# SEO Keywords (optional, for Open Graph)
+keywords: "computational chemistry, molecular dynamics, GROMACS, LAMMPS, chemical engineering, sustainable, hydrogen, machine learning, python, scientific computing, PhD research, nanoclusters, catalysis, process engineering"
 
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
-url: 'http://alokranjancheme.github.io/'
+url: 'https://alokranjancheme.github.io/'
+
+# Author information for Open Graph and metadata
+author:
+  name: Alok Ranjan
+  email: alokranjancheme@gmail.com
+  affiliation: "Computational Researcher | Indian Institute of Technology Kharagpur"
 
 github:
   username: alokranjancheme             # change to your github username
@@ -52,6 +64,8 @@ social:
     # Uncomment below to add more social links
     # - https://www.facebook.com/username
     - https://www.linkedin.com/in/alokranjancheme
+    # - https://orcid.org/XXXX-XXXX-XXXX-XXXX  # Uncomment and add your ORCID
+    # - https://scholar.google.com/citations?user=XXXXX  # Uncomment and add your Google Scholar
 
 google_site_verification:               # fill in to your verification string
 

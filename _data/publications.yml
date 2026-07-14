@@ -1,0 +1,109 @@
+publications:
+  - id: "palladium-clusters-stability"
+    order: 1
+    featured: true
+    
+    title: "Stability of Small Palladium Clusters in Water: Insights from Molecular Dynamics Simulations"
+    authors:
+      - "Alok Ranjan"
+      - "Prof. Parag Arvind Despande"
+      # - "Co-author 1"
+      # - "Co-author 2"
+    
+    journal: "Journal of Chemical Physics"
+    year: 2026
+    status: "In Preparation / Under Review"
+    # volume: "165"
+    # issue: "12"
+    # pages: "124501"
+    
+    abstract: >-
+      Small palladium clusters (Pd₃, Pd₄, Pd₅) exhibit remarkable stability in aqueous 
+      environments, a phenomenon crucial for understanding catalysis and nanomaterial chemistry. 
+      This work presents comprehensive molecular dynamics simulations of isolated and aggregating 
+      Pd clusters in five solvent environments. Using enhanced sampling techniques and custom force 
+      fields, we analyze solvation shell structure, cluster-cluster interactions, and aggregation 
+      dynamics. Our results reveal that water's hydrogen bonding network plays a central role in 
+      cluster stabilization through specific coordination modes. Organic solvents show different 
+      aggregation pathways, suggesting opportunities for solvent-directed cluster assembly. The 
+      findings have implications for rational design of catalytic materials and industrial processes.
+    
+    keywords:
+      - Palladium Clusters
+      - Molecular Dynamics
+      - Solvation
+      - Nanoclusters
+      - Force Field Development
+      - Catalysis
+      - Aggregation
+    
+    methods:
+      - Molecular Dynamics Simulation (GROMACS, LAMMPS)
+      - Force Field Development
+      - Trajectory Analysis (MDAnalysis)
+      - Solvation Shell Analysis
+      - Graph Connectivity Methods
+    
+    doi: null  # To be assigned upon publication
+    # url: "https://doi.org/10.1063/..."
+    
+    # pdf: "/assets/publications/palladium-clusters-2026.pdf"
+    preprint: null
+    # preprint: "https://arxiv.org/abs/2406.xxxxx"
+    
+    bibtex: |
+      @article{Ranjan2026,
+        title={Stability of Small Palladium Clusters in Water: Insights from Molecular Dynamics Simulations},
+        author={Ranjan, A. and Despande, P. A.},
+        journal={Journal of Chemical Physics},
+        year={2026}
+      }
+    
+    related_projects:
+      - "cluster-aggregation-analysis"
+      - "palladium-force-field"
+      - "md-solvation-effects"
+    
+    research_themes:
+      - "molecular_engineering"
+
+# Template for additional publications (uncomment and fill in as needed)
+# 
+#  - id: "publication-id"
+#    order: 2
+#    featured: false
+#    
+#    title: "Publication Title"
+#    authors:
+#      - "Author 1"
+#      - "Author 2"
+#    
+#    journal: "Journal Name"
+#    year: 2026
+#    status: "Published"
+#    volume: "XX"
+#    issue: "X"
+#    pages: "XXXXX"
+#    
+#    abstract: >-
+#      Abstract text here
+#    
+#    keywords:
+#      - keyword1
+#      - keyword2
+#    
+#    doi: "10.xxxx/xxxxx"
+#    url: "https://doi.org/10.xxxx/xxxxx"
+#    pdf: "/assets/publications/filename.pdf"
+#    preprint: "https://arxiv.org/abs/2406.xxxxx"
+#    
+#    bibtex: |
+#      @article{Author2026,
+#        ...
+#      }
+#    
+#    related_projects:
+#      - "project-id"
+#    
+#    research_themes:
+#      - "theme_id"

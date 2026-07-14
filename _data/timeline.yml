@@ -1,0 +1,81 @@
+events:
+  - year: 2015
+    type: "education"
+    title: "Class X (CBSE)"
+    institution: "LBPS Aurangabad, Bihar"
+    score: "9.2/10"
+    description: ""
+
+  - year: 2019
+    type: "education"
+    title: "B.Tech in Chemical Engineering"
+    institution: "UICT Jalgaon, Maharashtra"
+    score: "7.79/10"
+    description: "Foundation in chemical engineering fundamentals"
+
+  - year: 2021
+    type: "research"
+    title: "M.Tech Term Project: Psychological Well-being Research"
+    institution: "IIT Kharagpur, Rekhi Centre of Excellence"
+    advisor: "Prof. Saamdu Chetri"
+    description: >-
+      Evaluated psychological well-being across different age groups in India. 
+      Data analysis, statistical methods.
+
+  - year: 2022
+    type: "research"
+    title: "M.Tech Thesis: Palladium Cluster Stability in Water"
+    institution: "IIT Kharagpur, Chemical Engineering Department"
+    advisor: "Prof. Parag Arvind Despande"
+    description: >-
+      Investigation of why small palladium atoms (Pd₃, Pd₄) remain stable in water 
+      using molecular dynamics simulations. Force field development and validation.
+    highlight: true
+
+  - year: 2023
+    type: "education"
+    title: "M.Tech in Chemical Engineering"
+    institution: "IIT Kharagpur"
+    score: "9.3/10"
+    description: "Completed M.Tech with focus on computational chemistry and molecular simulation"
+    highlight: true
+
+  - year: "2023-2024"
+    type: "industry"
+    title: "Machine Learning & Computational Chemistry"
+    organization: "Aganitha AI"
+    description: >-
+      Developed machine learning applications for molecular property prediction. 
+      Scientific data pipeline development and automation.
+
+  - year: "2024-2026"
+    type: "industry"
+    title: "Process Engineering: Hydrogen Pilot Plant"
+    organization: "ONGC (Oil & Natural Gas Corporation)"
+    description: >-
+      Process engineering for green hydrogen production. Industrial-scale simulations 
+      and process optimization. Shaped my interest in sustainable chemical engineering.
+    highlight: true
+
+  - year: "2024-Present"
+    type: "research"
+    title: "Advanced Molecular Dynamics Research"
+    institution: "Independent Research"
+    description: >-
+      Comprehensive study of palladium nanoclusters (Pd₃ to Pd₅₅) in multiple solvent 
+      environments. 90+ MD trajectories analyzed. Machine learning applications. 
+      Manuscript in preparation for Journal of Chemical Physics.
+    highlight: true
+
+career_phases:
+  - phase: "Foundation"
+    years: "2015-2019"
+    description: "Early education building towards chemical engineering"
+
+  - phase: "Advanced Study"
+    years: "2019-2023"
+    description: "M.Tech at IIT Kharagpur with focus on computational chemistry"
+
+  - phase: "Industrial & Research"
+    years: "2023-Present"
+    description: "Bridging industry and research for sustainable chemistry"
