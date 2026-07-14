@@ -2,6 +2,7 @@
 icon: fas fa-envelope
 order: 7
 title: Contact
+hide: false
 ---
 
 ## Get in Touch

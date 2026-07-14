@@ -2,6 +2,7 @@
 icon: fas fa-flask
 order: 1
 title: Research
+hide: false
 ---
 
 ## Research Overview

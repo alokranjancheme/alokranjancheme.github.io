@@ -1,88 +1,54 @@
 ---
-# the default layout is 'page'
-icon: fas fa-info-circle
-order: 4
+icon: fas fa-user
+hide: true
 ---
 
-# ALOK RANJAN
+# About Me
 
-## CHEMICAL ENGINEERING
+I'm **Alok Ranjan**, a computational chemical engineer passionate about using molecular simulations and scientific computing to design sustainable chemical processes and accelerate the discovery of new catalysts.
 
-## EDUCATION
+## Research Identity
 
-Year Degree/Exam Institute CGPA/Marks
+My work bridges **molecular-level understanding** with **chemical engineering principles**. Rather than viewing computational methods as an end goal, I use them as a powerful bridge between quantum mechanics and macroscopic phenomena — ultimately solving real industrial problems.
 
-* 2023 M.TECH IIT Kharagpur 9.3 / 10
+### What Drives My Research
 
-* 2019 B.TECH UICT Jalgaon Maharashtra 7.79 / 10
+**Sustainability at Scale**: Chemistry and chemical engineering are fundamental to addressing climate change, energy transition, and circular economy. I'm committed to developing computational tools that enable faster, greener process design.
 
-* 2015 Class XII, BSEB TPS College Patna Bihar 76.2%
+**Palladium Nanoclusters**: My current research focuses on understanding how small Pd clusters behave in aqueous environments. This is crucial for catalytic applications in hydrogenation and cross-coupling reactions.
 
-* 2013 Class X, CBSE LBPS Aurangabad Bihar 9.2 / 10
+**Open Science**: I believe in reproducible research. All my code is version-controlled, documented, and available on GitHub. I write tutorials to help others skip months of debugging.
 
-```
-PROJECTS
-```
-M.TECH Project (CH67101)|
-Professor Parag Arvind Despande|
-Chemical Engineering Department [Aug 2022-Feb 2023]
+## Background
 
-**Title:**  Investigation ofthe reasons behind the stability of small-atom Pd clusters in water using MDsimulations.
+- **M.Tech in Chemical Engineering** (2023), IIT Kharagpur — CGPA: 9.3/10
+- **B.Tech in Chemical Engineering** (2019), UICT Jalgaon — CGPA: 7.79/10
+- **Professional Experience**: 18 months at ONGC in process optimization and production scheduling; current research in palladium cluster stability
 
-M.TECH Term Project (RX60012)|
-Professor Saamdu Chetri|
-Rekhi Centre of Excellence for the SoH [Oct 2021-Dec 2021]
+## Technical Foundation
 
-**Title:** Evaluation and developmentof relationship between types of Psychological well-being across age in India
+**Molecular Dynamics & Simulation**: LAMMPS, GROMACS, force field development, system setup and equilibration
 
-B.TECH Project| 
-Senior Scientist Indrajit Kumar Ghosh CSIR-Indian Institute of Petroleum, Dehradun [Jan 2019-June 2019]
+**Scientific Computing**: Python (NumPy, Pandas, Matplotlib, Scikit-learn), HPC environments, performance optimization
 
-**Title:**  Synthesis, screening of catalyst, and process optimization for the direct synthesis of styrene from Kerosene
+**Chemical Engineering**: Process dynamics, thermodynamics, reaction engineering, separation processes, reactor design
 
-```
-SKILLS AND EXPERTISE
-```
-Programming Languages: fluent in Python |familiar with C,C++ and MATLAB
-Frameworks and Libraries: Numpy | Tensorflow | Scikit-learn | Keras | Matplotlib | Pandas | Seaborn
-Software: COMSOL Multiphysics | AspenPlus | MS Office LAMMPS | Avogadro | VMD
-Instrument Exposure: GC| XRD | TPD |
+**Tools & Software**: COMSOL, AspenPlus, VMD, Avogadro, Git, Linux/HPC clusters
 
-```
-POSITIONS OF RESPONSIBILITY
-```
-Departmental Teaching Assistanceship| 
-Biochemical Engineering (CH40001)|
-Prof. Parag Arvind Despandey [Aug 2022-Present]
+## On This Website
 
-Departmental Teaching Assistanceship| 
-Advance Thermodynamics| 
-Prof. Parag Arvind Despandey [Aug 2022-Present]
+Explore my work through these sections:
 
-Member Public Relation Committee| 
-3rd National Symposium on SEFCO-2019|
-CSIR-IIP Dehradun [May 10 - May 11 2019]
+- **[Research](/research/)** — Detailed overview of my four research areas and current focus
+- **[Projects](/projects/)** — 12 projects showcasing problems, approaches, and impact
+- **[Publications](/publications/)** — Peer-reviewed work and manuscripts in preparation  
+- **[Blog](/blog/)** — Tutorials, technical deep-dives, and research methodology articles
+- **[CV](/cv/)** — Complete academic and professional history
+- **[Contact](/contact/)** — Let's collaborate or discuss ideas
 
-```
-CERTIFICATIONS
-```
-* Introduction to Statistics
-* Mastering Data Structures and Algorithms using C and C++
-* MATLAB Onramp SIMULINK Onramp
-* Attended 2 days workshop on COMSOL Multiphysics Organized by Department of Chemical Engineering, IIT Bombay
+## Outside Research
 
-```
-COURSEWORK INFORMATION
-```
-* Fluid Mechanics
-* Heat Transfer
-* Mechanical Operation
-* Chemical Reaction Engineering
-* Petroleum Refining Engineering
-* Thermodynamics Mass Transfer
-* Process Dynamics and Control
-* Process Calculation
-* Plant Design and Economics
+I'm passionate about **science communication** and making complex concepts accessible. Through [tendstozero.com](https://tendstozero.com), I write about chemistry, computational methods, and scientific thinking for general audiences. I believe understanding should not be gatekept — research belongs to everyone.
 
 
 

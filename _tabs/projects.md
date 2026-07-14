@@ -2,6 +2,7 @@
 icon: fas fa-project-diagram
 order: 2
 title: Projects
+hide: false
 ---
 
 ## Projects

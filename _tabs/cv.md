@@ -2,6 +2,7 @@
 icon: fas fa-file-pdf
 order: 6
 title: CV
+hide: false
 ---
 
 ## Curriculum Vitae
