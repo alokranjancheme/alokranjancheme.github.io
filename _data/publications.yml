@@ -67,6 +67,75 @@ publications:
     research_themes:
       - "molecular_engineering"
 
+  - id: "transition-metal-clusters-review"
+    order: 2
+    featured: true
+    
+    title: "Strategies for Rational Design and Applications of Transition Metal Clusters"
+    authors:
+      - "Swayam Prabha Misra"
+      - "Alok Ranjan"
+      - "Raghav Shrimali"
+      - "Parag A. Deshpande"
+    
+    journal: "Chemical Physics Reviews"
+    year: 2024
+    status: "Published"
+    volume: "5"
+    issue: "031309"
+    date: "September 11, 2024"
+    
+    abstract: >-
+      Transition metal clusters have garnered considerable attention as fascinating nanoscale 
+      entities with unique properties that transcend the behavior of isolated atoms and bulk materials. 
+      This comprehensive review presents the latest advancements in transition metal cluster research, 
+      including diverse synthesis strategies for controlled cluster synthesis, structural characterization 
+      using X-ray and spectroscopic methods, and density functional theory analysis of structure–property 
+      relationships. The review covers electronic, optical, and catalytic properties with emphasis on 
+      stability and size control, providing a holistic overview to serve as a valuable resource for 
+      researchers and technologists in this field.
+    
+    keywords:
+      - Transition Metal Clusters
+      - Nanomaterials
+      - Cluster Synthesis
+      - Density Functional Theory
+      - Catalysis
+      - Nanoparticles
+      - Structure-Property Relationships
+      - Spectroscopy
+      - Transmission Electron Microscopy
+      - Catalytic Applications
+    
+    methods:
+      - Density Functional Theory (DFT)
+      - X-ray Spectroscopy
+      - Transmission Electron Microscopy (TEM)
+      - Scanning Tunneling Microscopy (STM)
+      - Structural Characterization
+      - Theoretical Analysis
+    
+    doi: "10.1063/5.0204606"
+    url: "https://doi.org/10.1063/5.0204606"
+    
+    bibtex: |
+      @article{Misra2024,
+        title={Strategies for Rational Design and Applications of Transition Metal Clusters},
+        author={Misra, S. P. and Ranjan, A. and Shrimali, R. and Deshpande, P. A.},
+        journal={Chemical Physics Reviews},
+        volume={5},
+        number={031309},
+        year={2024},
+        doi={10.1063/5.0204606}
+      }
+    
+    related_projects:
+      - "cluster-aggregation-analysis"
+      - "palladium-force-field"
+    
+    research_themes:
+      - "molecular_engineering"
+
 # Template for additional publications (uncomment and fill in as needed)
 # 
 #  - id: "publication-id"
