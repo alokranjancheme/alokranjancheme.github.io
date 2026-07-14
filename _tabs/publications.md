@@ -36,7 +36,7 @@ title: Publications
 {% for theme_id in pub.research_themes %}
   {% for theme in site.data.research_themes.themes %}
     {% if theme.id == theme_id %}
-- [{{ theme.name }}](/research/#{{ theme_id }})
+- {{ theme.name }}
     {% endif %}
   {% endfor %}
 {% endfor %}
@@ -45,7 +45,7 @@ title: Publications
 {% for project_id in pub.related_projects %}
   {% for project in site.data.projects_data.projects %}
     {% if project.id == project_id %}
-- [{{ project.title }}](/projects/#{{ project_id }})
+- {{ project.title }}
     {% endif %}
   {% endfor %}
 {% endfor %}

@@ -9,8 +9,6 @@ title: CV
 **Alok Ranjan**  
 Computational Chemical Engineer | Sustainable Process Engineering
 
-[Download CV (PDF)](/assets/cv/alok-ranjan-cv.pdf){: .btn .btn-primary}
-
 ---
 
 ## EDUCATION

@@ -19,6 +19,7 @@ My research focuses on understanding molecular behavior in complex chemical syst
 {% for theme in site.data.research_themes.themes %}
 
 ### {{ theme.name }}
+{: #{{ theme.id }}}
 
 **Research Focus**: {{ theme.short_name }}
 

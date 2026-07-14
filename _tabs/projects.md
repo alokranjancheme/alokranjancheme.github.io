@@ -21,6 +21,7 @@ All my projects are organized by research area. Each project describes the scien
 {% for project in theme_projects %}
 
 ### {{ project.title }}
+{: #{{ project.id }}}
 
 **{{ project.subtitle }}**
 
@@ -50,12 +51,6 @@ All my projects are organized by research area. Each project describes the scien
 
 **Impact**:  
 {{ project.impact }}
-
-{% if project.links %}
-  {% if project.links.blog %}
-  [Read the blog post]({{ project.links.blog }})
-  {% endif %}
-{% endif %}
 
 ---
 
